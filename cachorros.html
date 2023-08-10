@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    header {
+        background-color: #1d1c1c;
+        color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhIVFRUVFRUVFRUVFRUVFRUVFRUWFhUVFhUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGi0eHh8tLi0tLSsvKy0tLSstLS0tLSsrLS0rLS0tLSstLS0tLS0tLS0tLS0tNi0tLS0tLS0tLf/AABEIAKcBLQMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwABBAUGB//EADgQAAIBAwIEAwYGAQIHAAAAAAABAgMRIQQxBRJBUWFxgQYikaGx8BMyQtHh8cFSYhQjM1NygrL/xAAaAQACAwEBAAAAAAAAAAAAAAAAAQIEBQMG/8QAKREAAwACAQQBAgYDAAAAAAAAAAECAxEhBAUSMUEycRMiUWGBobHR8P/aAAwDAQACEQMRAD8AkYjYxLjEZGJpGCCojIxCURkYiGkVGIagFFBpCJ6BUQkgkgkhBoFIKwXKEogPQKiFYJIuwDBSL5Q0i7CADlJYZYnKAAWJYOxdgGLsTlGWJYA0L5SWGWKsAaF8pXKNsU0AhXKVyjbFMAFOILiOaKaGGhPKC4jmgGgEJcAHEe0C0AtCJRFSiaXEW4jFozyiLlE0NASiMRmlEXKJpkhTQyI9DIoqKGRQhouKGRJGIaQiSIkEkWkEkIkRINIiQSQDKSCSLSCSEBSRaRaRYDIkXYtEsIZLEsXYlgAliWLLQADYlgh1HSylssd3sRqlK23olMVb1K2ZrEsdBaJdWGtA3sijfcYXEpsv4+23X1NI5dgW0b6+jt2Of+E5OyZWvulL1P8AZajtMP3RXOu5DXDh7GS4fj7ZzXc836L/AL+To+14P1f9f6OeUaZQa/m/+DHWrJfmeX94HPc8vykKu1Yn6bDYDRk1Gpitm149waHEE3yzw+/Rl/B18ZHp8Mz+o7deNbnlGtoBoa0DJF8zhTQtjpIW0AhUkLkh0kLkhiEyiKaHyQtoZEfFDEgbDIoQwojEgUg4iJItINIpBICRaQSKQQgIgkikEgGWiyJF2EBC7ESCAYNi0iywAqwMpJDEjbR0itd79f2K+fOsa/cs9P07yv8AYTptPm7Tt5b/AMHRgr4WyEQh/pVuyXYbT1ii+RrJjZs9Za3Xo2sOCcM6n2a400t9yTZnlXbY5y6EE0/R0afyZq1O/wB9zPR0yT9fj6GitIrT9/v73OblNnRNpDKcLE1M1CLk1d9uwV8HN4hqE00FcIU8s83xf2j5W7Jtp46LNn8LmGXE3VWVv4L+zDxqvTpt36fuec1HtRSg8t2tfZZ8k3e3iTjC6kdZFLPR6idndbC5VOZI42m9qtLNe9zLpdxdl5yWL+pvp6iElenLmj4PK8GN46n2tArVens63DuKOD5Ju8enh4eR3YzTV0eMqpnS0PFVCC5nt/Je6brHK1Xozuq6GbflPDPQNAMDS6uFRXi0xrRrTSpbRiXDl6fDFSQuSHNC5ImQEtAOI2SAAiOSCiCgkAxiDiDFDEhDRaDSKSCQiREg0ikWAy0EikghAQIiLQDJYsiIAyBwpt7JvyyChtGty9LrsQyOlO5W2TxqXWqekO/DhTjzVYN93fC9FlnQjOEqfuWzhW+fyuef4xxOlJKjKahNtPlba5rdu46jWlFQWVm3hsefy57dvyR6PDgiYXieU9tvajWUtRDS6OmnKSWeRzlNt4Uc527A8H4jrXVlT11D8OrCn+I5U8L8NOzlOCbWLvMXte6OH7b1KlLWzlCc6c48vJVvZp25sSSVvzPHbwZzuE8ZqaaOpqyrSq161GdGE3JubqVOVOSk3+iKcr9PdXVFnHimo00crupraPsOnmmk077HR00rq5879meIVOSOMbdle2fmmfQNDB8ucXyUVLm9Fqvp2VqHuytM8O3cqvj764B07x9B/JFLgurXtjb+bHkuN65xm0ju6+drnmtbTU3zSl4+7ZteG/3kg+TrK0eD9odS5Ta872v2+Z4/U14TVPkhJSUWqspO6nJzk4tL9KUOVW8Ge34jw/mcnu7ux5itwWpCV4q3kuZfBZNPBcqdFDPFN7DqVIUZ0p6V1FJqKnGajZy/VGyxKDzujva2n+BWg6cPw3Vy6a/ImuXZfpTcnhbcpj4LwytCaqfh801+WU4tRi+6V9/NnfocOl+I6taXPN/BeXxDJkhLW9jia3vWgKmtk8OLXf8AsTJc2UdLVUkorv6ffY56w77Rirsp/BZ3ya+FylTSmpW/yrnf4ZxV1ZuNla2+enieY4JoKuqm3JuNKL8Nui8z3lKjGEVGKskrJGl0eLIud6Rk9fmx/Trb/wAFSQuSHNC5I0zIEyQDGyFsZENIYkAhkQBBxQcQEHERINBIpBIQy0GCgkAy0WUWIYSLKiEgAiLIQBkLRCxAFTpQk7SindWWL2uYZyWnUYP/AKaleL7ZzF+GcHS0q9+PmD7TRiqMpNJrZp7e87L6mN1+NK9r+Td7fbePT/gDXcNp1rSd1O2JK12ul77nPXswv+4/SMYvO/vWv2+A32d1KqaeCc7uzi5dVKLcHdeNl57mz8ecZJTW+0u/7FJXUl3x2yaXhFOnFJK9s5bbb8b7nTpTsJ57vcOLDfOw1wXqDPTVrmip3eTDUrpbhQSYOKz+9zzNWorvP1O5ravMm/v5Hl9bP3t362+pzlbOvpCHTVxqiuqKlZZ/gpSZ2ObHx1MI7rbwv8LkjLmy1aPRbGWjp7u7/o2TWBaQmzFqPeZmcrpwit930t+4/UO7x9/wUnZdPidJXyQbPV8I00adGCirLlT8btXbZqYjhjvRpv8A2R/+UPkehj6Vo8xk35Pf6gsXIYxciZzFsWxjAYyISGIWmGmAIYg0LQaAaGIJARDQiQSYSYCCQgDQSALTAew7hXATLEMMsFMsBlphIAtCAOErNPxRj9vdXyaOTv8Aqj62vL/CNE3j5/DJz/arTrULTUXlSrc01/shFylfwskv/ZdzI7hxf3Rtdue4+zMvshw7/h9NGU1arVfO098u+fQ9RTanFp7r5PYwc/NUfRRVl4YNungrPs8MzFe2zTc6QNNrmsaYyM34PK171108CKqkTgjQdaTtvnp2OTrKvZeF/v78zZXrXVkcrXzSw98/L7+Q7CTmaury3TWL4s89d7nI1dS7uadXXUrr7ucipUvsEyNsOpUvYbSnmxzIyzY6NLC/Ym0RN1PsK1VS2PiFRlcy62L53b49FgEiLZVN7/Az152X3ua6Wlm6c5xV4w37tdbeSyBwnSfj1UlmCs5vpbdJ9M7WO0Y6bS17OVZZlN79HstLDlhCPaMV8Eg2gmAzfXCPNN7ewZAMJgsZEWxbGMVIYgojELiGhkRkQ0KiMiIkhiCQCCTEMNBAJhJiGEgkCmFcACRYKYQhlloG5dwGWXcG5EwAMbpdJFXqW95JxT7J2bS7LC+Ak11vdgo99/Uz+41Kxc+zR7aqeTj0crQttzf+47+noKULd18Dg6aSjKS6XO9oNUuR4bt/49r9WjDw63pm9m2lsxO6vGW6v18tjn63Ucqdmr/exl4z7QRjKUYLmnm9to+HmeK4vxavfMbX8exbjC9Fd5Ee44fPHM3d7Z7b9DFxmqmmvPa/+Pu54qHHa213t/q+djLX41W62dvF487E/wABi/FR25Une739TFX3wjnUfaJp/wDMT80759TqKqqkOaDTV8Eax1Psc5FXozQXvI2wqGBwks7W6Wu/h/Zz+K8Q5LKL955ta3+MAo8mFX4o9fSSUW+rB/BtG9sv5g8ChOVKMqm+51tDR5536Rz69BxjdWpRzvIoh0zocO0v4dNR67u3d/UdCCirRSSveySWXu8dQ2wWb0ypSS+Dzt26bb+SmwWWwWTIAyAbCkAwEDIWw5C2MRcWMQhMZGQyGxqYSYuLDQDGphIUglIRLY1BC0y7iGMLuAWgANMJMWXcAGJli0XcQxhAAkAGjR0+aXlkdrpK3rt4j9FScYX6vJg1+6+i+LPPdwzed8ekek7fh/Dhb9vk5847v1Meu4xOhQqON7tcsc25XLClt0udW99zi8S4a66qUo4bV4y7NbelzPxNK1s0L5lnmeGVYL88lHLd20rtr5v+xnGNXpIZc+eTe0cpJ92uv34nh/aHTajTzlGcbOLXNhSVnlZyrbHO0mqdS6cbNdVs/wCTdUprZkOmj0et4jSlmKs/pjvjO/TdmF1oveaXg7/t5nMbMdZTbai7etn8SfiiPm2dWs45aknns7/M7PshVleov08qdntzXtf78Dy2jpVFdtPl6ybwvU9p7KaVxhKpJfnaUMPKV3zeXn2IZF+XRKG/LZsr3/M1LsrNP1OZw/hzq6qUmm4xeW7ra2MeJ09QpTkoxWXhu2Er72XQ9JSoJRSVmkkk/TD+/Eq78Fwd3+Zgzlde7j1udfhtPlgu7y/X+Dlqnld2dyCwi10Ebp0yj3G9SpRdymyFM1TIBbBZbAbACNi5MtgMYgZMW2EwRkQYsZETFjYskRHRCTFJhxkRJDUwkwEy0xDDQaATC5gGEgkAmFcQBoIWmEmAwiwUWIArj9JS5pJCIRbdkdrh+mt9L+JU6vP4T4r2y90XT/iV5P0hknZfI5Wseb7fD6HU1WDl14dXfz/lnnsp6PGJjFSv4faJo6dm5NdWXSWX1sbKVNx6fQ54529krrS0cX2n9m6Orim3yVErRmt1FdGv1LPnnofOK/sRWpN2cGs2klJ384pfufYa0rp4yY6EJKXNP/Fi/GVrgp1CfJ8Sq8Op0pLnqPbMeRq68Hfe5jq6ei3iVRdrxUr9spq+x971ui09S6nSjJu2yt3+Jx63ANHTu3TSavt37fGxYWQ4OGfKuE8Ng3zOnUqW/KnBKG/VN5+nmex0mknJXlFRT3j+ZvpjovI7EJwVkopK2Lfexc5JZvv9p+YnexqNCtPp1DC8/HyffzDvb7/YbGfNlZMesqWxc4UdZH6dOU1bodmxg4VQ5Y3asze2bHSY/DHz8mL1mXzycfANimW2DcslQFgtBNgSYxAsWwmwGxiBYDYTAbGITGQaYiLGxZM5bHRYxCUxkWJjGphIWmEmIkNTCQpBJiGMQSATLTEMYkEgFItSEMYg4Qb2Apxxfp49TVTkzM6nuUQ/GOWa3Tdsq15Xwv7Nml06irt3f08DfTkoq3cxUr2uwm8XuZN5qp+VezYjFMT4z6C1NW9zPUiumbgyrbrr07B007XdsnF15HVLQnTQs823NEJXdrMRp581RrtlnRslsieKSGRgKkrGTUQSz++DbUn3+v8AVzFrKiWHi/QtpFfZypVprEXa/VLJg1OmvduTecvLXx6+mDoVtRFSsrtvG17I1wSqLkSzK9/BK3XxJ6EeQqaZydoJyl44S9EbNLwiaV57+P0Z7TSaKFNZWerMfEaiV8eAyOzzVWkomTSR56nlkvi2rtfocHScRlCpzr1XddmRx1PmnXoMkU4an2e6WCmxenrKcVJbNXDbN5HnHtPkjYDkExbGIjYDZbAYxMjkLcwpC2AgZSFthyFsYjPFjYshCZyQxMNSIQCQaYxMoghhphEIIYVy0QggCQ6hTuyEKXXZKjC3JoduxTeZKvjk0y/odpsZe5ZDy++T1XwbG7YAqX6EITZBGeEstLoW5tr79CEISSYPA6WZdXfPid2xCFzB6K2b2KqwW73MM6F3ft8fEohZK5lnQXTul8TuaDTRhFFEJSDE62tZ/L1R5fjOqWd/QhCFsco8XxGvzM5ilZkIcCzrg9n7NVuahHwbXwZ1WQh6HC945+x5fqFrLX3AkCQh1OILAIQYASYqRCAJgSkKkyEJET//2Q==);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 130px;
+        border-bottom: solid 2px #7192ec;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    section {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    h1 {
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+    }
+
+    ul li {
+        margin-bottom: 5px;
+    }
+
+    .hover:hover {
+        background-color: #7192ec;
+        color: #333;
+    }
+
+    .cachorro {
+        font-family: fantasy;
+        font-size: 3.0em;
+        color: #f6f8f8;
+    }
+
+    .rank {
+        display: flex;
+        border: solid 3px rgb(213, 213, 230);
+        box-sizing: content-box;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 30px;
+        flex-flow: column wrap;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: fit-content;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    #sobre {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-top: 20px;
+        margin-top: px;
+        margin-bottom: 20px;
+        border: solid 3px rgb(213, 213, 230);
+        width: fit-content;
+        height: fit-content;
+        border-radius: 20px;
+        text-align: center;
+        background-color: #d1d1e2;
+        
+    }
+
+    #contato {
+        margin-top: 100px;
+    }
+
+    #contato p {
+        font-family: cursive;
+    }
+
+    #sobre p {
+        font-family: monospace;
+        font-size: 1.3rem;
+        
+    }
+
+    .calculadora{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 500px;
+        box-sizing: border-box;
+        border: solid 3px rgb(41, 40, 40);
+        border-radius: 30px;
+    }
+
+    .calculadora h2 {
+        font-family: fantasy;
+        color: #0c0b0b;
+    }
+
+    body{
+        background-color: #947272;
+    }
+
+    #sobre h2,#membros h2, .calculadora h2{
+        font-family: fantasy;
+        color: #0c0b0b;
+        font-size: 2rem;
+        
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center; /* Centralizar horizontalmente */
+        align-items: center; /* Centralizar verticalmente */
+        height: 100vh; /* Definir altura igual à altura da janela do navegador */
+    }
+
+    #level {
+        border-style: groove;
+        border-color: #cbd4ee;
+        border: 1px solid rgb(86, 86, 90);
+        border-radius: 20px;
+        padding: 5px;
+    }
+    
+    #level:focus{
+        background-color: #d3dbf3;
+        border-collapse: collapse;
+        border: 2px solid #80a2e2;
+        box-shadow: 0px 0px 20px 0px #4976c9;
+        outline: none;
+    }
+
+    #resultado {
+        font-family: fantasy;
+        background-color: #a18585;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px #0c0b0b;
+        padding: 10px;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cachorros de Dibra - Guilda de Tibia</title>
+
+</head>
+
+<body>
+
+    <header>
+        <h1 class="cachorro">Cachorros de Dibra</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre" class="hover">Sobre nós</a></li>
+                <li><a href="#membros" class="hover">Membros</a></li>
+                <li><a href="#contato" class="hover">Contato</a></li>
+                <li> <a href="#calculadora" class="hover">Calculadora</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+    <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>Bem-vindo ao site oficial da guilda "Cachorros de Dibra"!<br>Somos um grupo de aventureiros dedicados que
+            compartilham uma paixão por matar noobs!.<br>Junte-se a nós em nossas jornadas emocionantes através deste
+            mundo
+            mágico cheio de desafios e aventuras!</p>
+            <img class="imagem" src="https://3.bp.blogspot.com/-nyus8VfJSfQ/XGxUhS8AiEI/AAAAAAAANmc/Tfj44yln3xMjcjSA2Z4KpaYKNpJSbMBJgCLcBGAs/s1600/hq720.jpg" alt="">
+            
+    </section>
+</div>
+
+    <section id="membros">
+        <br><br><br><br><br><br><br><br><br>
+        <h2>Rank Dos Membros</h2>
+        <div class="rank">
+            <div>Cachorro Psicopata, ring: 666
+                <img src="https://www.tibiawiki.com.br/images/9/91/Outfit_Knight_Male_Addon_3.gif" alt="kaka">
+            </div>
+            <div>Cachorro Safado, ring: 555
+                <img src="https://www.tibiawiki.com.br/images/d/df/Outfit_Assassin_Male_Addon_3.gif" alt="">
+            </div>
+            <div>Cachorro Chaves, ring: 444
+                <img src="https://www.tibiawiki.com.br/images/8/83/Outfit_Barbarian_Male_Addon_3.gif" alt="">
+            </div>
+            <!-- Adicione mais membros da guilda aqui -->
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+    </section>
+
+    <section>
+        <div id="calculadora" class="calculadora">
+            <h2>Calculadora de Up Maker</h2>
+            <p>Por favor digite o level mais alto da party:</p>
+            <input type="text" id="level">
+            <button id="botao">Calcular</button>
+            <p id="resultado"></p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco através do seguinte email: auau@gmail.com <br>ou matando noobs em issavi! <br>venha
+            aumentar o tibia ring dos membros!</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Cachorros de Dibra</p>
+    </footer>
+
+    <script type="text/javascript" src="script.js"> </script>
+
+</body>
+
+</html>
